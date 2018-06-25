@@ -1,0 +1,72 @@
+.free {
+  position: relative;
+
+
+  &::after {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    content: "";
+    background-color: @color-blue;
+    border-radius: 50%;
+    top: 60px;
+    right: 33px;
+  }
+
+  &::before {
+    width: 92px;
+    height: 13px;
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    background-image: url("../img/wave.png");
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 45px;
+    z-index: 1;
+  }
+
+  &__inner {
+    padding-bottom: 128px;
+    position: relative;
+
+    &::after {
+      width: 23px;
+      height: 23px;
+      position: absolute;
+      content: "";
+      background-color: @color-blue;
+      border-radius: 50%;
+      bottom: 72px;
+      left: 40px;
+    }
+
+    &::before {
+      width: 92px;
+      height: 13px;
+      position: absolute;
+      content: "";
+      background-color: transparent;
+      background-image: url("../img/wave.png");
+      background-repeat: no-repeat;
+      top: 0;
+      right: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: @color-text;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+}

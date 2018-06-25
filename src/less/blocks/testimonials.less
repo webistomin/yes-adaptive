@@ -1,0 +1,76 @@
+.testimonials {
+  margin-bottom: 94px;
+
+  &__list {
+    padding-top: 50px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    vertical-align: top;
+  }
+
+  &__name {
+    display: block;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: @color-text;
+    margin: 18px 0;
+  }
+
+  &__desc {
+    text-align: left;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    color: @color-text;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__link {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    color: @color-red--lighten;
+    font-size: 15px;
+    position: relative;
+
+    &::after {
+      width: 100%;
+      height: 2px;
+      background-color: @color-red--lighten;
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      opacity: 0.5;
+    }
+  }
+
+  &__pagination {
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__page {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: #e9e9e9;
+    border-radius: 50%;
+
+    &--active {
+      background-color: @color-red--lighten;
+    }
+  }
+}
