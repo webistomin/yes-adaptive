@@ -1,0 +1,41 @@
+.teachers {
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__image {
+    vertical-align: top;
+  }
+
+  &__name {
+    display: block;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: @color-text;
+    margin: 18px 0;
+  }
+
+  &__desc {
+    text-align: left;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    color: @color-text;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

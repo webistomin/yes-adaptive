@@ -1,0 +1,21 @@
+.title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 800;
+  color: @color-black;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.05em;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 7px;
+    background-color: @color-red--lighten;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

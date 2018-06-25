@@ -1,0 +1,80 @@
+.pricing {
+  margin-top: 15px;
+  position: relative;
+  background-image: url("../img/circle.png");
+  background-repeat: no-repeat;
+  background-position: center 136px;
+
+  &::after {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: transparent;
+    top: 63px;
+    left: 63px;
+    border: 9px solid @color-blue;
+  }
+
+  &::before {
+    width: 92px;
+    height: 13px;
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    background-image: url("../img/wave.png");
+    background-repeat: no-repeat;
+    top: 230px;
+    right: 30px;
+  }
+
+  &__price {
+    display: block;
+    text-align: center;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: @color-red--lighten;
+    margin: 20px 0;
+    margin-top: 40px;
+  }
+
+  &__text {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: @color-text;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    margin-bottom: 30px;
+  }
+
+  &__counter {
+    display: block;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: @color-text;
+    margin: 18px 0;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: @color-text;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-style: normal;
+  }
+
+
+}
