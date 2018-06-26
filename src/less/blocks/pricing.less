@@ -76,5 +76,74 @@
     font-style: normal;
   }
 
+  @media @screen-sm {
+    display: flex;
+
+    &__img {
+      position: absolute;
+      left: -470px;
+      z-index: -1;
+    }
+
+    &__title {
+      position: relative;
+      width: max-content;
+
+
+      &::after {
+        content: "?";
+        position: absolute;
+        font-family: 'Gilroy', 'Arial', sans-serif;
+        font-weight: 800;
+        font-size: 200px;
+        color: @color-black;
+        opacity: 0.09;
+        top: -100px;
+        right: 0;
+      }
+    }
+
+    &__wrapper {
+      padding-left: 200px;
+    }
+
+    &__price {
+      text-align: left;
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__counter {
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    &__item {
+      max-width: 280px;
+    }
+  }
+
 
 }
