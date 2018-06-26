@@ -84,4 +84,34 @@
   &__block {
     text-align: center;
   }
+
+  @media @screen-sm {
+    &__title {
+      max-width: 240px;
+    }
+
+    &::before {
+      left: 220px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: left;
+      padding: 0;
+    }
+
+    &__counter {
+      position: absolute;
+      top: -10px;
+    }
+
+    &__block {
+      position: relative;
+
+    }
+  }
 }

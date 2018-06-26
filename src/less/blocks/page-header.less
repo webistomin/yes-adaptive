@@ -54,4 +54,26 @@
       }
     }
   }
+
+  @media @screen-sm {
+    &__item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--hidden {
+        display: block;
+      }
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__inner {
+      align-items: center;
+    }
+  }
 }

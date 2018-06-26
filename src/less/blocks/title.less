@@ -18,4 +18,15 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media @screen-sm {
+    font-size: 30px;
+    text-align: left;
+
+    &::before {
+      left: 0;
+      -webkit-transform: translateX(0%);
+      transform: translateX(0);
+    }
+  }
 }
