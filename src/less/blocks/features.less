@@ -55,4 +55,56 @@
       text-align: center;
     }
   }
+
+  @media @screen-sm {
+    position: relative;
+    padding-bottom: 100px;
+
+    &::before {
+      width: 92px;
+      height: 13px;
+      position: absolute;
+      content: "";
+      background-color: transparent;
+      background-image: url("../img/wave.png");
+      background-repeat: no-repeat;
+      bottom: 0;
+      right: 60px;
+    }
+
+
+    &__title {
+      max-width: 345px;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__text {
+      padding: 0;
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__feature {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &::before {
+        transform: none;
+        left: 8px;
+      }
+    }
+  }
 }
