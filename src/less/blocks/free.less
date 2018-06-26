@@ -69,4 +69,29 @@
     font-style: normal;
     margin-bottom: 20px;
   }
+
+  @media @screen-sm {
+    &__inner {
+      position: relative;
+      display: flex;
+    }
+
+    &__image {
+      position: absolute;
+      left: -150px;
+      z-index: -1;
+    }
+
+    &__block {
+      width: 300px;
+      margin-left: auto;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
 }
