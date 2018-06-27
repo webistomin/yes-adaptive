@@ -145,4 +145,37 @@
       padding: 0;
     }
   }
+
+  @media @screen-md {
+    margin-top: 200px;
+    background-image: url("../img/bg-grey-2.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    position: relative;
+    margin-bottom: 200px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 446px;
+      height: 446px;
+      background-image: url("../img/circle-bg.png");
+      bottom: -210px;
+      right: 100px;
+    }
+
+    &__title {
+      max-width: 235px;
+    }
+
+    &__block {
+      &:first-child {
+        max-width: 474px;
+      }
+    }
+
+
+    }
 }
