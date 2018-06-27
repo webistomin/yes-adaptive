@@ -178,4 +178,28 @@
 
 
     }
+
+  @media @screen-lg {
+    &__title {
+      max-width: 400px;
+    }
+
+    &__step {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__item {
+      &:nth-child(even) .steps__block:first-child {
+
+        margin-left: 60px;
+      }
+    }
+
+
+  }
 }

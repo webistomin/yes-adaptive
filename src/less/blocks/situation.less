@@ -176,4 +176,43 @@
       align-items: initial;
     }
   }
+
+  @media @screen-lg {
+    &__list {
+      position: relative;
+
+      &::before {
+        width: 2px;
+        height: 100%;
+        content: "";
+        position: absolute;
+        background-color: #e9e9e9;
+        left: 30%;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__counter {
+      right: -52px;
+    }
+
+    &__item {
+
+
+      &:nth-child(even) .situation__block:first-child {
+
+
+        & .situation__counter {
+          left: -52px;
+        }
+
+      }
+
+
+    }
+  }
 }

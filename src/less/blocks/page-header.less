@@ -38,9 +38,25 @@
     color: @color-text;
     font-size: 15px;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
     &--red {
       position: relative;
       color: @color-red--lighten;
+
+      &:hover {
+        text-decoration: none;
+
+        &::after {
+          display: none;
+        }
+      }
 
       &::after {
         width: 100%;
@@ -74,6 +90,16 @@
 
     &__inner {
       align-items: center;
+    }
+  }
+
+  @media @screen-lg {
+    &__logo {
+      font-size: 48px;
+    }
+
+    &__link {
+      font-size: 18px;
     }
   }
 }

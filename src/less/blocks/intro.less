@@ -147,6 +147,52 @@
       top: 28%;
       text-align: center;
     }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media @screen-lg {
+    margin-top: -45px;
+
+    &::before {
+      right: 350px;
+      top: 180px;
+    }
+
+    &__title {
+      &--small {
+        font-size: 34px;
+      }
+    }
+
+    &__image {
+      flex-basis: 420px;
+      flex-grow: 1;
+    }
+
+    &__decor {
+      font-size: 290px;
+      top: 35%;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__wrapper {
+      max-width: 555px;
+
+      &::before {
+        top: 290px;
+      }
+    }
+
+    &__btn {
+      max-width: 372px;
+    }
   }
 
 }

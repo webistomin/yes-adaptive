@@ -26,6 +26,14 @@
     color: @color-text;
     font-size: 15px;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
     &--red {
       position: relative;
       color: @color-red--lighten;
@@ -40,7 +48,17 @@
         left: 0;
         opacity: 0.5;
       }
+
+      &:hover {
+        text-decoration: none;
+
+        &::after {
+          display: none;
+        }
+      }
     }
+
+
   }
 
   @media @screen-sm {
@@ -51,5 +69,7 @@
     &__logo {
       margin-right: auto;
     }
+
+
   }
 }
