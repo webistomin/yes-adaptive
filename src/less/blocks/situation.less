@@ -151,4 +151,30 @@
       width: 100%;
     }
   }
+
+  @media @screen-md {
+    background-image: url("../img/bg-grey.png");
+    background-repeat: no-repeat;
+    background-position: 100% -208px;
+    background-color: transparent;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 250px;
+
+    &::before {
+      left: 452px;
+      top: 37px;
+    }
+
+    &__item {
+      max-width: initial;
+    }
+
+    &__list {
+      padding-left: 20px;
+      padding-right: 15px;
+      justify-content: space-between;
+      align-items: initial;
+    }
+  }
 }

@@ -107,4 +107,46 @@
     }
   }
 
+  @media @screen-md {
+    &::after {
+      width: 54px;
+      height: 54px;
+      top: 165px;
+      left: 165px;
+    }
+
+    &::before {
+      right: 310px;
+      top: 28px;
+
+    }
+
+    &__image {
+      width: 350px;
+    }
+
+    &__wrapper {
+      position: relative;
+      margin-left: auto;
+
+      &::before {
+        width: 92px;
+        height: 13px;
+        position: absolute;
+        content: "";
+        background-color: transparent;
+        background-image: url("../img/wave.png");
+        background-repeat: no-repeat;
+        top: 230px;
+        right: -25px;
+      }
+    }
+
+    &__decor {
+      font-size: 240px;
+      top: 28%;
+      text-align: center;
+    }
+  }
+
 }
