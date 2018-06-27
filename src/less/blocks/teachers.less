@@ -101,4 +101,30 @@
       line-height: 24px;
     }
   }
+
+  @media @screen-md {
+    background-image: url("../img/circle.png");
+    background-repeat: no-repeat;
+    background-position: 116% 100%;
+    background-size: 434px 434px;
+
+    &::after {
+      top: 220px;
+    }
+
+    &::before {
+      top: 210px;
+      left: 140px;
+    }
+
+    &__item {
+      width: 345px;
+      flex-shrink: 0;
+      margin-right: 0;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
 }

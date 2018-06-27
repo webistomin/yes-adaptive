@@ -145,5 +145,44 @@
     }
   }
 
+  @media @screen-md {
+    margin-top: 100px;
+    padding-bottom: 130px;
+    background-position: 10% 50%;
+
+    &::after {
+      width: 54px;
+      height: 54px;
+      left: -20px;
+      top: 50%;
+    }
+
+    &::before {
+      top: 230px;
+      left: 30px;
+    }
+
+    &__title {
+      &::after {
+        right: -55px;
+      }
+    }
+
+    &__img {
+      left: -275px;
+      z-index: 2;
+    }
+
+    &__wrapper {
+      width: 595px;
+      margin-left: auto;
+      padding: 0;
+    }
+
+    &__item {
+      min-height: 140px;
+    }
+  }
+
 
 }
