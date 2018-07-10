@@ -37,6 +37,8 @@
 :uk: Была выполнена верстка адаптивного макета для курсов по изучению английского языка
 
 ## Различные тесты
+<img src="mockup/google.png">
+<img src="mockup/lighthouse.png">
 
 ## Превью сайта
 <img src="mockup/mockup.png">
